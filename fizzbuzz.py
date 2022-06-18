@@ -10,8 +10,8 @@ def fizzbuz(max: int = 100, tests: dict = {3: "fizz", 5: "buzz"}):
         print(num) if response == "" else print(response)
 
 
-i = input("please enter the number you want to go up to:\n")
-if i:
+while __name__ == "__main__":
+    i = input("please enter the number you want to go up to:\n")
     try:
         fizzbuz(int(i))
     except ValueError:
