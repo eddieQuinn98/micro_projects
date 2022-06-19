@@ -7,7 +7,7 @@ DESC: In this kata you will create a function that takes a list of non-negative 
 
 
 def filter_list(l):
-    return [item for item in l if type(item) == int]
+    return [item for item in l if type(item) != str]
 
 
 if __name__ == "__main__":
