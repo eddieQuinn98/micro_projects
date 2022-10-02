@@ -1,0 +1,5 @@
+<!DOCTYPE replace[<!ENTITY last_name "q"> <!ENTITY first_name "eddie"> ]>
+<userInfo>
+ <firstName>&first_name;</firstName>
+ <lastName>&last_name;</lastName>
+</userInfo>
