@@ -5,11 +5,7 @@ Date: 06/10/22
 
 def alphabet_position(text:str):
     d = {chr(i+96):i for i in range(1,27)}
-    os = []
-    for l in [*text.lower()]:
-        try: os.append(str(d[l]))
-        except KeyError: continue
-    return ' '.join(os)
+    return " ".join(str(d[l]) for l in [*text.lower()] if l.isalpha())
 
 if __name__ == "__main__":
     print(alphabet_position("yeet"))
