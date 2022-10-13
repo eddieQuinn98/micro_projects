@@ -1,3 +1,6 @@
 # Micro Projects
+This is a collection of projects that doesnt warrant their own repos. They are organised by the site they were done for
 
-Collection of various small projects, none of which are big enough to warrant creating their own repo
+- **Codewars -** Codewars
+- **THM -** TryHackMe
+- **LHN -** LondonHackNight
