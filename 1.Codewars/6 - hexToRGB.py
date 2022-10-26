@@ -8,4 +8,4 @@ def hex_string_to_RGB(hex_string:str):
     return {i[0]:int(hex_string[i[1]:i[1]+2], 16) for i in (("r",0),("g",2),("b",4))}
 
 if __name__ == "__main__":
-    print(hex_string_to_RGB("#FF9933"))``
+    print(hex_string_to_RGB("#FF9933"))
