@@ -1,18 +1,9 @@
-def check(inp: int, test: int):
-    return inp % test == 0
-
-
 def fizzbuz(max: int = 100, tests: dict = {3: "fizz", 5: "buzz"}):
-    for num in range(1, max):
-        response = ""
-        for test in tests:
-            response += tests[test] if check(num, test) else ""
-        print(num) if response == "" else print(response)
+    for i in range(1, max+1):
+        r = "".join(tests[t] if i % t == 0 else "" for t in tests)
+        print(i if r == "" else r)
 
 
-while __name__ == "__main__":
-    i = input("please enter the number you want to go up to:\n")
-    try:
-        fizzbuz(int(i))
-    except ValueError:
-        print("Please enter valid number")
+if __name__ == "__main__":
+    i = int(input(("please enter the number you want to go up to:\n")))
+    fizzbuz(i)
